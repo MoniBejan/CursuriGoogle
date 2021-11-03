@@ -1,23 +1,22 @@
-# This is a sample Python script.
+#declararea unei liste care să conțină elementele 7, 8, 9, 2, 3, 1, 4, 10, 5, 6 (în această ordine).
+#afișarea unei alte liste ordonată ascendent (lista inițială trebuie păstrată în aceeași formă)
+#afișarea unei liste ordonată descendent (lista inițială trebuie păstrată în aceeași formă)
+#afișarea numerelor pare din listă (folosind DOAR slice, altă metodă va fi considerată invalidă)
+#afișarea numerelor impare din listă (folosind DOAR slice, altă metodă va fi considerată invalidă)
+#afișarea elementelor multipli ai lui 3.
+#a se păstra acuratețea indexilor - aceștia trebuie să fie cât mai specifici.
+list = [7, 8, 9, 2, 3, 1, 4, 10, 5, 6]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+list.sort()
+print(list)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Monica')
-
-var = 11
-if var % 2:
-    print('nu')
-else:
-    print('da')
+list.reverse()
+print(list)
+list.reverse()
+print(list[1::2])
+print(list[::2])
+print(list[2::3])
 
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
